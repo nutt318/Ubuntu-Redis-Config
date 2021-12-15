@@ -1,5 +1,5 @@
 # Ubuntu-Redis-Config
-This guide is for Ubuntu 20.04 with running Redis and having multiple instances
+This guide is for Ubuntu 20.04 for running Redis with multiple instances
 
 *Also assums your running at root*
 
@@ -18,6 +18,7 @@ Update the below lines to match
 
 ### Edit redis-server.service file
 `vi /usr/lib/systemd/system/redis-server.service`
+
 FROM:
 ```
 Type=forking
