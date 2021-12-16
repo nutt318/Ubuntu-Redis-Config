@@ -1,7 +1,7 @@
 # Ubuntu-Redis-Config
 This guide is for Ubuntu 20.04 and running Redis with multiple instances
 
-*This guide assums your running as root*
+****This guide assums your running as root*
 
 ### Check for updates and install
 `apt-get update && apt-get upgrade -y`
