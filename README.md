@@ -2,11 +2,11 @@
 This guide is for Ubuntu 20.04 and running Redis with multiple instances
 
 ### Notes:
-****This guide assums your running as root*</br>
-****You may change the default redis config to your liking, ex. we need alot of databases so I've changed it to 50 while you may not need that many you can leave it at the default vaule of 16*</br>
+****This guide assumes your running as root*</br>
+****You may change the default Redis config to your liking, ex. we need a lot of databases so I've changed it to 50 while you may not need that many you can leave it at the default value of 16*</br>
 ****Suggestions or edits are welcome!*
 
-## Lets Begin!
+## Let's Begin!
 ### Check for updates and install
 `apt-get update && apt-get upgrade -y`
 
@@ -47,26 +47,26 @@ TimeoutStopSec=10
 ### Restart Redis and check if service is running
 `systemctl status redis`
 
-### Test Redis Connectivity
+### Test Redis connectivity
 `redis-cli ping`
 
 Should receive `PONG`
 
 
 ---
-## Start setup for additional Instances (if needed)
+## Start setup for additional instances (if needed)
 ### Create directories and update permissions
 ```
 mkdir -p /var/lib/redis_6380
 chown -R redis:redis /var/lib/redis_6380
 chgrp redis /var/lib/redis_6380
 ```
-### Copy Config and update permissions 
+### Copy config and update permissions 
 ```
 cp /etc/redis/redis.conf /etc/redis/redis_6380.conf
 chown redis /etc/redis/redis_6380.conf
 ```
-### Edit Config
+### Edit config
 `vi /etc/redis/redis_6380.conf`
 
 FROM:
@@ -84,10 +84,10 @@ logfile /var/log/redis/redis-server_6380.log
 dir /var/lib/redis_6380
 ```
 
-### Copy and Setup new Service File
+### Copy and setup new service file
 `cp /usr/lib/systemd/system/redis-server.service /usr/lib/systemd/system/redis-server_6380.service`
 
-### Modify Service File to match
+### Modify service file to match
 `vi /usr/lib/systemd/system/redis-server_6380.service`
 
 FROM:
@@ -104,13 +104,13 @@ PIDFile=/run/redis/redis-server_6380.pid
 ### Reload system daemon to update Redis
 `systemctl daemon-reload`
 
-### Start Service and Check status
+### Start service and check status
 ```
 systemctl start redis-server_6380
 systemctl status redis-server_6380
 ```
 
-### Reboot system and check if all Redis intanctes are running
+### Reboot system and check if all Redis instances are running
 `reboot`
 
 After reboot run
