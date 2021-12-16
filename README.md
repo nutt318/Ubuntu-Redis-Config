@@ -43,6 +43,7 @@ TimeoutStopSec=10
 
 ### Test Redis Connectivity
 `redis-cli ping`
+
 Should receive `PONG`
 
 
