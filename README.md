@@ -3,8 +3,7 @@ This guide is for Ubuntu 20.04 and running Redis with multiple instances
 
 ### Notes:
 ****This guide assums your running as root*</br>
-****You may change the default redis config to your liking, ex. we need alot of databases so I've changed it to 50 while you may not need that many you can leave it at the default vaule of 16*
-
+****You may change the default redis config to your liking, ex. we need alot of databases so I've changed it to 50 while you may not need that many you can leave it at the default vaule of 16*</br>
 ****Suggestions or edits are welcome!*
 
 ### Check for updates and install
