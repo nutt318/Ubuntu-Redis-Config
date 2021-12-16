@@ -1,5 +1,5 @@
 # Ubuntu-Redis-Config
-This guide is for Ubuntu 20.04 for running Redis with multiple instances
+This guide is for Ubuntu 20.04 and running Redis with multiple instances
 
 *Also assums your running at root*
 
