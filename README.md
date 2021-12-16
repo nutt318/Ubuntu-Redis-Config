@@ -61,6 +61,7 @@ chown redis /etc/redis/redis_6380.conf
 ```
 ### Edit Config
 `vi /etc/redis/redis_6380.conf`
+
 FROM:
 ```
 port 6379
@@ -81,6 +82,7 @@ dir /var/lib/redis_6380
 
 ### Modify Service File to match
 `vi /usr/lib/systemd/system/redis-server_6380.service`
+
 FROM:
 ```
 ExecStart=/usr/bin/redis-server /etc/redis/redis.conf
