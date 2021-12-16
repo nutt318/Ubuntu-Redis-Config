@@ -105,8 +105,11 @@ systemctl status redis-server_6380
 
 ### Reboot system and check if all Redis intanctes are running
 `reboot`
+
 After reboot run
+
 `systemctl status redis*`
+
 You should now see multiple Redis services running of different ports
 
 ---
