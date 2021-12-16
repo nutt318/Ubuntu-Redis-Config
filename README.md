@@ -46,6 +46,7 @@ Should receive `PONG`
 
 ---
 ## Start setup for additional Instances (if needed)
+```
 `mkdir -p /var/lib/redis_6380`
 `chown -R redis:redis /var/lib/redis_6380`
 `chgrp redis /var/lib/redis_6380`
@@ -53,3 +54,4 @@ Should receive `PONG`
 
 `cp /etc/redis/redis.conf /etc/redis/redis_6380.conf`
 `chown redis /etc/redis/redis_6380.conf`
+```
