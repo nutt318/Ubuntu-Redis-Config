@@ -116,3 +116,5 @@ You should now see multiple Redis services running of different ports
 ## Setup for additional Instances (if needed)
 Start at "Start setup for additional Instances (if needed)"
 Replace any mention of 6380 to 6381
+
+If more instances are needed continue upping the port numbers by 1
