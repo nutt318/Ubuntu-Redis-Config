@@ -97,12 +97,17 @@ PIDFile=/run/redis/redis-server_6380.pid
 ### Reload system daemon to update Redis
 `systemctl daemon-reload`
 
-### Enable Service at Startup and Check status
+### Start Service and Check status
 ```
-systemctl enable redis-server_6380
 systemctl start redis-server_6380
 systemctl status redis-server_6380
 ```
+
+### Reboot system and check if all Redis intanctes are running
+`reboot`
+After reboot run
+`systemctl status redis*`
+You should now see multiple Redis services running of different ports
 
 ---
 ## Setup for additional Instances (if needed)
