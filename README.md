@@ -12,9 +12,11 @@ This guide is for Ubuntu 20.04 and running Redis with multiple instances
 ### Edit default Redis Config file
 `vi /etc/redis/redis.conf`
 Update the below lines to match
-* #bind 127.0.0.1 ::1
-* protected-mode no
-* databases 50
+```
+#bind 127.0.0.1 ::1
+protected-mode no
+databases 50
+```
 
 ### Edit redis-server.service file
 `vi /usr/lib/systemd/system/redis-server.service`
