@@ -1,5 +1,5 @@
 # Ubuntu-Redis-Config
-This guide is for Ubuntu 20.04 and running Redis with multiple instances. I'll also include a section to setup Firewalld.
+This guide is for Ubuntu 20.04 and running Redis with multiple instances. I'll also include a section to setup firewall rules for ufw.
 
 ### Notes:
 ****This guide assumes your running as root*</br>
