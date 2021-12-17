@@ -15,6 +15,7 @@ This guide is for Ubuntu 20.04 and running Redis with multiple instances. I'll a
 
 ### Edit default Redis Config file
 `vi /etc/redis/redis.conf`
+
 Update the below lines to match
 ```
 #bind 127.0.0.1 ::1
