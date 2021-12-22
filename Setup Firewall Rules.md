@@ -1,3 +1,6 @@
+##Run the below commands to allow SSH and access to the Redis default port##
+
+```
 ufw allow ssh
 ufw allow 6379/tcp
 ufw allow from 10.10.1.0/24
@@ -11,3 +14,4 @@ ufw allow from 172.16.3.0/24
 ufw allow from 172.16.4.0/24
 ufw enable
 ufw status
+```
