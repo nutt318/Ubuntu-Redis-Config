@@ -17,4 +17,4 @@ This guide is for Ubuntu 20.04 and running Redis with multiple instances. Also i
 [Insctructions Here](https://github.com/nutt318/Ubuntu-Redis-Config/blob/main/Setup-Redis.md)
 
 ## Join Domain
-[Insctructions Here](https://github.com/nutt318/Ubuntu-Redis-Config/blob/main/Setup-Redis.md)
+[Insctructions Here](https://github.com/nutt318/Ubuntu-Redis-Config/blob/main/Setup-Join-Domain.md)
