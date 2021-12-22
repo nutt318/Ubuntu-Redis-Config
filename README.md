@@ -10,3 +10,5 @@ This guide is for Ubuntu 20.04 and running Redis with multiple instances. Also i
 ### Check for updates and install
 `apt-get update && apt-get upgrade -y`
 
+## Redis Setup
+[a link](https://github.com/nutt318/Ubuntu-Redis-Config/blob/main/Setup-Firewall-Rules.md)
