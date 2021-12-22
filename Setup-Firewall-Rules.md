@@ -1,4 +1,5 @@
 ## Run the below commands to allow SSH and access to the Redis default port
+Replace subnets with yours
 
 ### Example: Production running 1 instance
 ```
