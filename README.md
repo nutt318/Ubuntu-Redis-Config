@@ -16,5 +16,5 @@ This guide is for Ubuntu 20.04 and running Redis with multiple instances. Also i
 ## Firewall Setup
 [Insctructions Here](https://github.com/nutt318/Ubuntu-Redis-Config/blob/main/Setup-Firewall-Rules.md)
 
-## Join Domain
+## Domain Setup
 [Insctructions Here](https://github.com/nutt318/Ubuntu-Redis-Config/blob/main/Setup-Join-Domain.md)
