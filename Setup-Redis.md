@@ -20,6 +20,7 @@ Type=forking
 ExecStart=/usr/bin/redis-server /etc/redis/redis.conf
 PIDFile=/run/redis/redis-server.pid
 TimeoutStopSec=0
+ReadOnlyDirectories=/
 ```
 TO:
 ```
@@ -29,6 +30,7 @@ ExecStartPost=/bin/sh -c "echo $MAINPID > /var/run/redis/redis.pid"
 ExecStart=/usr/bin/redis-server /etc/redis/redis.conf
 PIDFile=/run/redis/redis-server.pid
 TimeoutStopSec=10
+#ReadOnlyDirectories=/
 ```
 ### Reload system daemon to update Redis
 `systemctl daemon-reload`
@@ -48,12 +50,12 @@ Should receive `PONG`
 ```
 mkdir -p /var/lib/redis_6380
 chown -R redis:redis /var/lib/redis_6380
-chgrp redis /var/lib/redis_6380
+chmod 750 /var/lib/redis_6380
 ```
 ### Copy config and update permissions 
 ```
 cp /etc/redis/redis.conf /etc/redis/redis_6380.conf
-chown redis /etc/redis/redis_6380.conf
+chown redis:redis /etc/redis/redis_6380.conf
 ```
 ### Edit config
 `vi /etc/redis/redis_6380.conf`
